@@ -1,4 +1,4 @@
-function displayMessage() {
+function getValues() {
 
     //get the <input/> element from html. you get the element by adding = 
     // document to your javascript
@@ -12,7 +12,7 @@ function displayMessage() {
     Swal.fire(
         {
             backdrop: false,
-            title: 'App Name',
+            title: 'ClearMort.',
             text: message,
         }
     )

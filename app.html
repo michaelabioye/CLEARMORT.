@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Name: A coding challenge</title>
+    <title>ClearMort.: A Mortage Tool</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md" data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="/img/michael Abi ye (3)/9.png" height="33" /> App Name</a>
+                    <img src="/img/michael Abi ye (3)/9.png" height="33" /> ClearMort.</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,8 @@
                             <a class="nav-link" href="/code.html">The Code</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/" target="blank">The Repo</a>
+                            <a class="nav-link" href="https://github.com/michaelabioye/CLEARMORT." target="blank">The
+                                Repo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://michaelabioye.netlify.app" target="blank">Portfolio</a>
@@ -57,12 +58,126 @@
         </nav>
     </header>
     <main class="container py-3">
-        <h1> The app UI goes here</h1>
-        <div class="hstack gap-3">
-            <input id="messageinput" class="form-control" style="max-width: 12rem" placeholder="enter a message">
-            <button id="submitbtn" class="btn btn-primary">
-                Display Message
-            </button>
+        <div class="row g-3 ">
+            <div class="col-12 col-md-4 col-lg-4">
+                <div class="card h-100 border-3 border-dark">
+                    <div class="card-body">
+                        <label for="loanAmount" class="form-label">Loan Amount</label>
+                        <input id="loanAmount" class="form-control" />
+
+                        <label for="termMonths" class="form-label">Term(Months)</label>
+                        <input id="termMonths" class="form-control" />
+
+                        <label for="interestRate" class="form-label">Interest Rate</label>
+                        <input id="interestRate" class="form-control" />
+                        <div class="d-flex justify-content-end">
+                            <button id="calculateBtn" class="btn btn-primary mt-5">
+                                Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 col-lg-8">
+                <div class="card h-100 border-3 border-dark">
+                    <div class="card-body">
+                        <h1 class="text-center"> Your Monthly Payments</h1>
+                        <div id="amountAMonth" class="text-center display-6 mt-5 mb-5"> $445</div>
+
+                        <div>
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td>Total Attendance</td>
+                                        <td class="text-end" id="stats-total"> 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Average Attendance</td>
+                                        <td class="text-end" id="stats-avg"> 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Most Attended</td>
+                                        <td class="text-end" id="stats-max"> 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Least Attended</td>
+                                        <td class="text-end" id="stats-min"> 0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12">
+                <div class="card border-3 border-dark">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered">
+                                <thead class="table-secondary">
+                                    <tr>
+                                        <th>Month</th>
+                                        <th>Payment</th>
+                                        <th>Principal</th>
+                                        <th>Interest</th>
+                                        <th>Total Interest</th>
+                                        <th>Balance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>thi s</td>
+                                        <td>belong</td>
+                                        <td>here</td>
+                                        <td>you can</td>
+                                        <td> do this</td>
+                                        <td> do this</td>
+                                    </tr>
+                                    <tr>
+                                        <td>thi s</td>
+                                        <td>belong</td>
+                                        <td>here</td>
+                                        <td>you can</td>
+                                        <td> do this</td>
+                                        <td> do this</td>
+                                    </tr>
+                                    <tr>
+                                        <td>thi s</td>
+                                        <td>belong</td>
+                                        <td>here</td>
+                                        <td>you can</td>
+                                        <td> do this</td>
+                                        <td> do this</td>
+                                    </tr>
+                                    <tr>
+                                        <td>thi s</td>
+                                        <td>belong</td>
+                                        <td>here</td>
+                                        <td>you can</td>
+                                        <td> do this</td>
+                                        <td> do this</td>
+                                    </tr>
+                                    <tr>
+                                        <td>thi s</td>
+                                        <td>belong</td>
+                                        <td>here</td>
+                                        <td>you can</td>
+                                        <td> do this</td>
+                                        <td> do this</td>
+                                    </tr>
+
+                                </tbody>
+
+
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -114,13 +229,13 @@
     <script>
         //get the <button> element from the html//
 
-        let button = document.getElementById('submitbtn');
+        let button = document.getElementById('calculatebtn');
 
         //when the button is clicked, run the displayMessage function//
         //javascript is used to create functions then you take that function//
         //and place it into the html//
 
-        button.addEventListener('click', displayMessage);
+        button.addEventListener('click', getValues);
     </script>
 
 </body>
