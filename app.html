@@ -63,13 +63,13 @@
                 <div class="card h-100 border-3 border-dark">
                     <div class="card-body">
                         <label for="loanAmount" class="form-label">Loan Amount</label>
-                        <input id="loanAmount" class="form-control" />
+                        <input id="loanAmount" class="form-control" value="0" type="number" />
 
                         <label for="termMonths" class="form-label">Term(Months)</label>
-                        <input id="termMonths" class="form-control" />
+                        <input id="termMonths" class="form-control" value="0" type="number" />
 
                         <label for="interestRate" class="form-label">Interest Rate</label>
-                        <input id="interestRate" class="form-control" />
+                        <input id="interestRate" class="form-control" value="0" type="number" />
                         <div class="d-flex justify-content-end">
                             <button id="calculateBtn" class="btn btn-primary mt-5">
                                 Calculate</button>
@@ -89,19 +89,15 @@
                                 <tbody>
                                     <tr>
                                         <td>Total Attendance</td>
-                                        <td class="text-end" id="stats-total"> 0</td>
+                                        <td class="text-end" id="totalPrincipal"> 0</td>
                                     </tr>
                                     <tr>
                                         <td>Average Attendance</td>
-                                        <td class="text-end" id="stats-avg"> 0</td>
+                                        <td class="text-end" id="totalInterest"> 0</td>
                                     </tr>
                                     <tr>
                                         <td>Most Attended</td>
-                                        <td class="text-end" id="stats-max"> 0</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Least Attended</td>
-                                        <td class="text-end" id="stats-min"> 0</td>
+                                        <td class="text-end" id="totalCost"> 0</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -229,7 +225,7 @@
     <script>
         //get the <button> element from the html//
 
-        let button = document.getElementById('calculatebtn');
+        let button = document.getElementById('calculateBtn');
 
         //when the button is clicked, run the displayMessage function//
         //javascript is used to create functions then you take that function//
