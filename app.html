@@ -82,21 +82,22 @@
                 <div class="card h-100 border-3 border-dark">
                     <div class="card-body">
                         <h1 class="text-center"> Your Monthly Payments</h1>
-                        <div id="amountAMonth" class="text-center display-6 mt-5 mb-5"> $445</div>
+                        <div id="amountAMonth" class="text-center text-success display-6 mt-5 mb-5">
+                        </div>
 
                         <div>
                             <table class="table table-borderless">
                                 <tbody>
                                     <tr>
-                                        <td>Total Attendance</td>
+                                        <td>Total Principal</td>
                                         <td class="text-end" id="totalPrincipal"> 0</td>
                                     </tr>
                                     <tr>
-                                        <td>Average Attendance</td>
+                                        <td>Total Interest</td>
                                         <td class="text-end" id="totalInterest"> 0</td>
                                     </tr>
                                     <tr>
-                                        <td>Most Attended</td>
+                                        <td>Total Cost</td>
                                         <td class="text-end" id="totalCost"> 0</td>
                                     </tr>
                                 </tbody>
@@ -123,47 +124,7 @@
                                         <th>Balance</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>thi s</td>
-                                        <td>belong</td>
-                                        <td>here</td>
-                                        <td>you can</td>
-                                        <td> do this</td>
-                                        <td> do this</td>
-                                    </tr>
-                                    <tr>
-                                        <td>thi s</td>
-                                        <td>belong</td>
-                                        <td>here</td>
-                                        <td>you can</td>
-                                        <td> do this</td>
-                                        <td> do this</td>
-                                    </tr>
-                                    <tr>
-                                        <td>thi s</td>
-                                        <td>belong</td>
-                                        <td>here</td>
-                                        <td>you can</td>
-                                        <td> do this</td>
-                                        <td> do this</td>
-                                    </tr>
-                                    <tr>
-                                        <td>thi s</td>
-                                        <td>belong</td>
-                                        <td>here</td>
-                                        <td>you can</td>
-                                        <td> do this</td>
-                                        <td> do this</td>
-                                    </tr>
-                                    <tr>
-                                        <td>thi s</td>
-                                        <td>belong</td>
-                                        <td>here</td>
-                                        <td>you can</td>
-                                        <td> do this</td>
-                                        <td> do this</td>
-                                    </tr>
+                                <tbody id="paymentsTable">
 
                                 </tbody>
 
@@ -213,6 +174,16 @@
         </div>
 
     </footer>
+    <template id="tableTemplate">
+        <tr>
+            <td class="month"></td>
+            <td class="payment"></td>
+            <td class="principal"></td>
+            <td class="interest"></td>
+            <td class="total-interest"></td>
+            <td class="balance"></td>
+        </tr>
+    </template>
 
 
 
