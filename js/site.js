@@ -70,7 +70,7 @@ function loopForPaymentPlan(balance, term, rate) {
     let totalInterest = 0
 
     for (let month = 1; month <= term; month = month + 1) {
-
+        // if statement is the middle part of the loop that keeps the loop going
         let monthlyAmount = ((balance) * (rate / 1200) / (1 - Math.pow(1 + rate / 1200, - term)))
         let interestPay = remainingBalance * rate / 1200;
         let principalPay = monthlyAmount - interestPay;
@@ -149,52 +149,3 @@ function displayPayments(arrPaymentPlan) {
 }
 
 
-
-/*<tr>
-            <td class="month"></td>
-            <td class="payment"></td>
-            <td class="principal"></td>
-            <td class="interest"></td>
-            <td class="total-interest"></td>
-            <td class="balance"></td>
-        </tr>*/
-// if ((loan) * (inter / 1200) / (1 - (1 + inter / 1200) ^ (-term))) {
-//   totalMonthly = ''
-
-/*function getValues() {
-    // other code...
-
-    let loanSummary = calculateSummary(amount, months, rate);
-    displaySummary(loanSummary);
-}*/
-
-/*function calculateSummary(amount, months, rate) {
-    // calculate monthly payment...
-
-    let cost = payment * months;
-    let interest = cost - amount;
-
-    let summary = {
-        amount: amount,
-        totalCost: cost,
-        totalInterest: interest,
-        monthlyPayment: payment,
-    };
-    
-    return summary;
-}
-
-function displaySummary(loanSummary) {
-    // other code...
-
-    // THIS WON'T WORK!
-    monthlyPaymentElement.innerText = loanSummary;
-    // loanSummary is an object, so it displays as "Object object"
-
-    // note: innerText is set to be the specific property we want,
-    // not the whole object. The values are accessed by name  
-    monthlyPaymentElement.innerText = loanSummary.monthlyPayment;
-    totalInterestElement.innerText = loanSummary.totalInterest;
-    totalCostElement.innerText = loadnSummary.totalCost;
-    loanAmountElement.innerText = loanSummary.amount;
-}*/
