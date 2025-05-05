@@ -163,38 +163,39 @@ function displayPayments(arrPaymentPlan) {
 
 /*function getValues() {
                 // other code...
-            
+
                 let loanSummary = calculateSummary(amount, months, rate);
                 displaySummary(loanSummary);
             }*/
 
 /*function calculateSummary(amount, months, rate) {
                 // calculate monthly payment...
-            
+
                 let cost = payment * months;
                 let interest = cost - amount;
-            
+
                 let summary = {
                     amount: amount,
                     totalCost: cost,
                     totalInterest: interest,
                     monthlyPayment: payment,
                 };
-                
+
                 return summary;
             }
-            
+
             function displaySummary(loanSummary) {
                 // other code...
-            
+
                 // THIS WON'T WORK!
                 monthlyPaymentElement.innerText = loanSummary;
                 // loanSummary is an object, so it displays as "Object object"
-            
+
                 // note: innerText is set to be the specific property we want,
-                // not the whole object. The values are accessed by name  
+                // not the whole object. The values are accessed by name
                 monthlyPaymentElement.innerText = loanSummary.monthlyPayment;
                 totalInterestElement.innerText = loanSummary.totalInterest;
                 totalCostElement.innerText = loadnSummary.totalCost;
                 loanAmountElement.innerText = loanSummary.amount;
             }*/
+//testing github commit options
